@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Pesanan | Syafani Barokah</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo-text">
+                Syafani Barokah
+            </a>
+
+            <nav>
+
+                <a href="index.html">
+                    Beranda
+                </a>
+
+                <a href="cara-pemesanan.html">
+                    Cara Pemesanan
+                </a>
+
+                <a href="menu.html">
+                    Menu
+                </a>
+
+                <a href="pesanan.html" class="active">
+                    Pesanan
+                    <span id="cartCount">0</span>
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main class="page-container">
+
+
+        <section class="page-title">
+
+            <span class="title-decoration">
+                ✦
+            </span>
+
+            <p>
+                SYAFANI BAROKAH
+            </p>
+
+            <h1>
+                Pesanan
+                <span>Kamu</span>
+            </h1>
+
+            <div class="gold-line"></div>
+
+            <p class="page-description">
+                Periksa kembali pesanan kamu
+                sebelum dikirim.
+            </p>
+
+        </section>
+
+
+        <!-- PESANAN -->
+        <section class="order-section">
+
+            <div id="orderContainer">
+
+                <!-- DIISI JAVASCRIPT -->
+
+            </div>
+
+
+            <div
+                id="emptyOrder"
+                class="empty-order"
+            >
+
+                <div class="empty-icon">
+                    🛒
+                </div>
+
+                <h2>
+                    Belum Ada Pesanan
+                </h2>
+
+                <p>
+                    Yuk pilih makanan favoritmu
+                    terlebih dahulu.
+                </p>
+
+                <a
+                    href="menu.html"
+                    class="btn btn-primary"
+                >
+                    Lihat Menu
+                </a>
+
+            </div>
+
+
+            <div
+                id="orderSummary"
+                class="order-summary"
+            >
+
+                <div class="summary-row">
+
+                    <span>
+                        Total Pesanan
+                    </span>
+
+                    <strong id="orderTotal">
+                        Rp0
+                    </strong>
+
+                </div>
+
+
+                <button
+                    onclick="sendOrder()"
+                    class="btn btn-whatsapp"
+                >
+                    📱 Pesan via WhatsApp
+                </button>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-logo">
+            Syafani Barokah
+        </div>
+
+        <p>
+            Rasa rumahan, dibuat dengan sepenuh hati.
+        </p>
+
+        <div class="footer-location">
+            Kantin STAIN Sultan Abdurrahman
+        </div>
+
+        <div class="footer-copy">
+            © 2026 Syafani Barokah
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

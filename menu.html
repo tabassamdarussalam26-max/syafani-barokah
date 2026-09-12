@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Menu | Syafani Barokah</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- ORNAMEN -->
+    <div class="decor decor-1"></div>
+    <div class="decor decor-2"></div>
+
+
+    <!-- HEADER -->
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo-text">
+                Syafani Barokah
+            </a>
+
+            <nav>
+
+                <a href="index.html">
+                    Beranda
+                </a>
+
+                <a href="cara-pemesanan.html">
+                    Cara Pemesanan
+                </a>
+
+                <a href="menu.html" class="active">
+                    Menu
+                </a>
+
+                <a href="pesanan.html">
+                    Pesanan
+                    <span id="cartCount">0</span>
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTENT -->
+    <main class="page-container">
+
+
+        <section class="page-title">
+
+            <span class="title-decoration">
+                ✦
+            </span>
+
+            <p>
+                MENU SYAFANI BAROKAH
+            </p>
+
+            <h1>
+                Pilih Menu
+                <span>Favoritmu</span>
+            </h1>
+
+            <div class="gold-line"></div>
+
+            <p class="page-description">
+                Tentukan jumlah makanan yang kamu inginkan,
+                lalu masukkan ke pesanan.
+            </p>
+
+        </section>
+
+
+        <!-- MENU GRID -->
+        <section class="food-grid">
+
+
+            <!-- AYAM TALIWANG -->
+            <div class="food-card">
+
+                <div class="food-image">
+
+                    <img
+                        src="assets/ayam-taliwang.jpg"
+                        alt="Ayam Taliwang"
+                    >
+
+                </div>
+
+                <div class="food-content">
+
+                    <span class="food-category">
+                        MAKANAN
+                    </span>
+
+                    <h2>
+                        Ayam Taliwang
+                    </h2>
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            Rp15.000
+                        </strong>
+
+                        <div class="quantity-control">
+
+                            <button
+                                onclick="changeQuantity('Ayam Taliwang', 15000, -1)"
+                            >
+                                −
+                            </button>
+
+                            <span id="qty-Ayam-Taliwang">
+                                0
+                            </span>
+
+                            <button
+                                onclick="changeQuantity('Ayam Taliwang', 15000, 1)"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BAKSO -->
+            <div class="food-card">
+
+                <div class="food-image">
+
+                    <img
+                        src="assets/bakso-daging.jpg"
+                        alt="Bakso Daging"
+                    >
+
+                </div>
+
+                <div class="food-content">
+
+                    <span class="food-category">
+                        MAKANAN
+                    </span>
+
+                    <h2>
+                        Bakso Daging
+                    </h2>
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            Rp15.000
+                        </strong>
+
+                        <div class="quantity-control">
+
+                            <button
+                                onclick="changeQuantity('Bakso Daging', 15000, -1)"
+                            >
+                                −
+                            </button>
+
+                            <span id="qty-Bakso-Daging">
+                                0
+                            </span>
+
+                            <button
+                                onclick="changeQuantity('Bakso Daging', 15000, 1)"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PEMPEK -->
+            <div class="food-card">
+
+                <div class="food-image">
+
+                    <img
+                        src="assets/pempek.jpg"
+                        alt="Pempek"
+                    >
+
+                </div>
+
+                <div class="food-content">
+
+                    <span class="food-category">
+                        JAJANAN
+                    </span>
+
+                    <h2>
+                        Pempek
+                    </h2>
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            Rp10.000
+                        </strong>
+
+                        <div class="quantity-control">
+
+                            <button
+                                onclick="changeQuantity('Pempek', 10000, -1)"
+                            >
+                                −
+                            </button>
+
+                            <span id="qty-Pempek">
+                                0
+                            </span>
+
+                            <button
+                                onclick="changeQuantity('Pempek', 10000, 1)"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MIE REBUS -->
+            <div class="food-card">
+
+                <div class="food-image">
+
+                    <img
+                        src="assets/mie-rebus.jpg"
+                        alt="Mie Rebus"
+                    >
+
+                </div>
+
+                <div class="food-content">
+
+                    <span class="food-category">
+                        MAKANAN
+                    </span>
+
+                    <h2>
+                        Mie Rebus
+                    </h2>
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            Rp10.000
+                        </strong>
+
+                        <div class="quantity-control">
+
+                            <button
+                                onclick="changeQuantity('Mie Rebus', 10000, -1)"
+                            >
+                                −
+                            </button>
+
+                            <span id="qty-Mie-Rebus">
+                                0
+                            </span>
+
+                            <button
+                                onclick="changeQuantity('Mie Rebus', 10000, 1)"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MIE GORENG -->
+            <div class="food-card">
+
+                <div class="food-image food-placeholder">
+                    🍜
+                </div>
+
+                <div class="food-content">
+
+                    <span class="food-category">
+                        MAKANAN
+                    </span>
+
+                    <h2>
+                        Mie Goreng
+                    </h2>
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            Rp12.000
+                        </strong>
+
+                        <div class="quantity-control">
+
+                            <button
+                                onclick="changeQuantity('Mie Goreng', 12000, -1)"
+                            >
+                                −
+                            </button>
+
+                            <span id="qty-Mie-Goreng">
+                                0
+                            </span>
+
+                            <button
+                                onclick="changeQuantity('Mie Goreng', 12000, 1)"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- GADO-GADO -->
+            <div class="food-card">
+
+                <div class="food-image">
+
+                    <img
+                        src="assets/gado-gado.jpg"
+                        alt="Gado-Gado"
+                    >
+
+                </div>
+
+                <div class="food-content">
+
+                    <span class="food-category">
+                        MAKANAN
+                    </span>
+
+                    <h2>
+                        Gado-Gado
+                    </h2>
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            Rp12.000
+                        </strong>
+
+                        <div class="quantity-control">
+
+                            <button
+                                onclick="changeQuantity('Gado-Gado', 12000, -1)"
+                            >
+                                −
+                            </button>
+
+                            <span id="qty-Gado-Gado">
+                                0
+                            </span>
+
+                            <button
+                                onclick="changeQuantity('Gado-Gado', 12000, 1)"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- NASI GORENG -->
+            <div class="food-card">
+
+                <div class="food-image food-placeholder">
+                    🍳
+                </div>
+
+                <div class="food-content">
+
+                    <span class="food-category">
+                        MAKANAN
+                    </span>
+
+                    <h2>
+                        Nasi Goreng
+                    </h2>
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            Rp15.000
+                        </strong>
+
+                        <div class="quantity-control">
+
+                            <button
+                                onclick="changeQuantity('Nasi Goreng', 15000, -1)"
+                            >
+                                −
+                            </button>
+
+                            <span id="qty-Nasi-Goreng">
+                                0
+                            </span>
+
+                            <button
+                                onclick="changeQuantity('Nasi Goreng', 15000, 1)"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CIRENG KECIL -->
+            <div class="food-card">
+
+                <div class="food-image">
+
+                    <img
+                        src="assets/cireng.jpg"
+                        alt="Cireng"
+                    >
+
+                </div>
+
+                <div class="food-content">
+
+                    <span class="food-category">
+                        JAJANAN
+                    </span>
+
+                    <h2>
+                        Cireng Kecil
+                    </h2>
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            Rp5.000
+                        </strong>
+
+                        <div class="quantity-control">
+
+                            <button
+                                onclick="changeQuantity('Cireng Kecil', 5000, -1)"
+                            >
+                                −
+                            </button>
+
+                            <span id="qty-Cireng-Kecil">
+                                0
+                            </span>
+
+                            <button
+                                onclick="changeQuantity('Cireng Kecil', 5000, 1)"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CIRENG BESAR -->
+            <div class="food-card">
+
+                <div class="food-image">
+
+                    <img
+                        src="assets/cireng.jpg"
+                        alt="Cireng Besar"
+                    >
+
+                </div>
+
+                <div class="food-content">
+
+                    <span class="food-category">
+                        JAJANAN
+                    </span>
+
+                    <h2>
+                        Cireng Besar
+                    </h2>
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            Rp10.000
+                        </strong>
+
+                        <div class="quantity-control">
+
+                            <button
+                                onclick="changeQuantity('Cireng Besar', 10000, -1)"
+                            >
+                                −
+                            </button>
+
+                            <span id="qty-Cireng-Besar">
+                                0
+                            </span>
+
+                            <button
+                                onclick="changeQuantity('Cireng Besar', 10000, 1)"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- BUTTON -->
+        <div class="center-button">
+
+            <a
+                href="pesanan.html"
+                class="btn btn-primary"
+            >
+                Lihat Pesanan
+                <span id="menuCartCount">
+                    0
+                </span>
+            </a>
+
+        </div>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            Syafani Barokah
+        </div>
+
+        <p>
+            Rasa rumahan, dibuat dengan sepenuh hati.
+        </p>
+
+        <div class="footer-location">
+            Kantin STAIN Sultan Abdurrahman
+        </div>
+
+        <div class="footer-copy">
+            © 2026 Syafani Barokah
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
